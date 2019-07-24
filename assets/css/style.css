@@ -1,0 +1,15 @@
+body {
+    background-image: url("../images/candy1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#first{
+    background-color: #8bbee8ff;
+}
+
+h1{
+    color: #6dac4fff;
+}
