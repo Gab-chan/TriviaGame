@@ -6,7 +6,7 @@ body {
     font-family: Arial, Helvetica, sans-serif
 }
 
-#first{
+#div1{
     background-color: #8bbee8ff;
     width: 50%;
     height: auto;
@@ -17,5 +17,6 @@ body {
 
 h1{
     color: #6dac4fff;
+    text-align: center;
 }
 
