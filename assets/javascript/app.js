@@ -3,13 +3,13 @@
 // var unanswered = 0;
 
 
-// $("#second").hide();
+$("#div").hide();
 
-// $("#start").click(function(){
-//     $("#second").show();
-//     $("#first").css({"height": "auto"});
-//     $("#start").hide();
-// })
+$("#start").click(function(){
+    $("#div").show();
+    $("#div").css({"height": "auto"});
+    $("#start").hide();
+})
 
 
 function check(){
@@ -31,7 +31,7 @@ function check(){
         
     }
 
-    if (question1 != "Lord Boros"){
+    if (question1 != "Lord Boros" && question1 != ""){
         incorrect++;
     }
 
@@ -43,7 +43,7 @@ function check(){
 		correct++;
     }
 
-    if (question2 != "Erza"){
+    if (question2 != "Erza" && question2 != ""){
         incorrect++;
     }
     
@@ -55,7 +55,7 @@ function check(){
 		correct++;
     }
 
-    if (question3 != "Accelerator"){
+    if (question3 != "Accelerator" && question3 != ""){
         incorrect++;
     }
     
@@ -67,7 +67,7 @@ function check(){
 		correct++;
     }
 
-    if (question4 != "Madoka"){
+    if (question4 != "Madoka" && question4 != ""){
         incorrect++;
     }
     
@@ -79,7 +79,7 @@ function check(){
 		correct++;
     }
 
-    if (question5 != "Goblin"){
+    if (question5 != "Goblin" && question5 != ""){
         incorrect++;
     }
     
@@ -91,7 +91,7 @@ function check(){
 		correct++;
     }
 
-    if (question6 != "Erina"){
+    if (question6 != "Erina" && question6 != ""){
         incorrect++;
     }
     
@@ -103,7 +103,7 @@ function check(){
 		correct++;
     }
 
-    if (question7 != "Ais"){
+    if (question7 != "Ais" && question7 != ""){
         incorrect++;
     }
     
@@ -115,7 +115,7 @@ function check(){
 		correct++;
     }
 
-    if (question8 != "Father"){
+    if (question8 != "Father" && question8 != ""){
         incorrect++;
     }
     
@@ -124,7 +124,20 @@ function check(){
     }
 
     console.log(correct, incorrect, unanswered);
+
+    document.getElementById("alldone").innerHTML = "All Done";
+    document.getElementById("correct").innerHTML = "Correct Answers: " + correct;
+    document.getElementById("incorrect").innerHTML = "Incorrect Answers: " + incorrect;
+    document.getElementById("unanswered").innerHTML = "Unanswered: " + unanswered;
+
 }
+
+// $("#done").click(function(){
+//     $("#div").hide();
+//     $("#div").css({"height": "auto"});
+//     $("#start").hide();
+// })
+
 
 
 
