@@ -3,6 +3,8 @@ var incorrect = 0;
 var unanswered = 0;
 
 
+
+
 if (document.getElementById("num1").checked === "female") {
     score++
 

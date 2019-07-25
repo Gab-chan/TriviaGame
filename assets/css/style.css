@@ -3,20 +3,19 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 #first{
     background-color: #8bbee8ff;
+    width: 50%;
+    height: auto;
+    position: relative;
+    left: 30%;
+    top: 100px;
 }
 
 h1{
     color: #6dac4fff;
 }
 
-#first{
-    width: 50%;
-    position: relative;
-    left: 30%;
-    top: 100px;
-}
