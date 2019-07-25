@@ -1,8 +1,3 @@
-// var correct = 0;
-// var incorrect = 0;
-// var unanswered = 0;
-
-
 $("#div").hide();
 
 $("#start").click(function(){
@@ -132,11 +127,11 @@ function check(){
 
 }
 
-// $("#done").click(function(){
-//     $("#div").hide();
-//     $("#div").css({"height": "auto"});
-//     $("#start").hide();
-// })
+$("#done").click(function(){
+    $("#div3").hide();
+    $("#div").css({"height": "auto"});
+    $("#start").hide();
+})
 
 
 
