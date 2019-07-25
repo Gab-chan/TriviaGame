@@ -1,9 +1,10 @@
 $("#div").hide();
 
+
 $("#start").click(function(){
     $("#div").show();
-    $("#div").css({"height": "auto"});
     $("#start").hide();
+    $("#div1").css("height", "auto");
 })
 
 
@@ -120,7 +121,7 @@ function check(){
 
     console.log(correct, incorrect, unanswered);
 
-    document.getElementById("alldone").innerHTML = "All Done";
+    document.getElementById("alldone").innerHTML = "All Done!";
     document.getElementById("correct").innerHTML = "Correct Answers: " + correct;
     document.getElementById("incorrect").innerHTML = "Incorrect Answers: " + incorrect;
     document.getElementById("unanswered").innerHTML = "Unanswered: " + unanswered;

@@ -9,9 +9,9 @@ body {
 #div1{
     background-color: #8bbee8ff;
     width: 50%;
-    height: auto;
+    height: 300px;
     position: relative;
-    left: 30%;
+    left: 25%;
     top: 100px;
 }
 
@@ -20,4 +20,41 @@ h1{
     text-align: center;
 }
 
+#start{
+    width: 500px;
+    position: relative;
+    left: 24%;
+    top: 60px;
 
+}
+
+#div3{
+    margin-left: 2%;
+    
+    
+}
+
+
+#div4{
+    margin-left: 2%;
+    padding-bottom: 1%;
+}
+
+#alldone{
+    color: yellow;
+}
+
+#correct{
+    color: green;
+}
+
+#incorrect{
+    color: red;
+}
+
+#unanswered{
+    color: gray;
+}
+.questions{
+    color:#efefe8ff;
+}
