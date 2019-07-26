@@ -1,14 +1,26 @@
+//The id div start hiden.
 $("#div").hide();
 
 
+// function timer(seconds){
+//     const now = Date.now();
+//     const then = now + seconds * 1000;
+//     console.log({now, then});
+// }
+
+// When the button start is press the div tag with the id div is visible and the height of the div with id div1 is change to auto so the questions fit inside the div1.
 $("#start").click(function(){
+    
     $("#div").show();
     $("#start").hide();
     $("#div1").css("height", "auto");
+    c = 80;
 })
 
 
 function check(){
+    //question variables in which the value of each radio button is store.
+    
     var question1 = document.form1.question1.value;
 	var question2 = document.form1.question2.value;
     var question3 = document.form1.question3.value;
@@ -17,6 +29,7 @@ function check(){
     var question6 = document.form1.question6.value;
     var question7 = document.form1.question7.value;
     var question8 = document.form1.question8.value;
+    //variables used at the end to show the score.
 	var correct = 0;
     var incorrect = 0;
     var unanswered = 0;
@@ -119,21 +132,40 @@ function check(){
         unanswered++;
     }
 
-    console.log(correct, incorrect, unanswered);
-
+    // console.log(correct, incorrect, unanswered);
+    //The score variables are attach to the html.
     document.getElementById("alldone").innerHTML = "All Done!";
     document.getElementById("correct").innerHTML = "Correct Answers: " + correct;
     document.getElementById("incorrect").innerHTML = "Incorrect Answers: " + incorrect;
     document.getElementById("unanswered").innerHTML = "Unanswered: " + unanswered;
-
+    
+    
 }
 
+//when pressing the button done the div that contains the questions plus the button start will be hidden and the div with id div will have a height of auto.
 $("#done").click(function(){
     $("#div3").hide();
     $("#div").css({"height": "auto"});
     $("#start").hide();
 })
 
+
+
+function timer001(){
+    c = c - 1;
+    if (c < 80){
+        time001.innerHTML = c;
+    }
+    if (c < 1){
+        window.clearInterval(update);
+        $("#div3").hide();
+        document.getElementById("alldone").innerHTML = "Time's up";
+        document.getElementById("incorrect").innerHTML = "You Failed!";
+        
+        
+    }
+}
+update = setInterval("timer001()", 1000);
 
 
 
